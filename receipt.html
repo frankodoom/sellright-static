@@ -134,7 +134,11 @@
         crossorigin="anonymous"></script>
 
     <script>
-        var modal = new bootstrap.Modal(document.getElementById('modal'), { backdrop: 'static' });
+        var modalElement = document.getElementById('modal');
+        modalElement.addEventListener('hidden.bs.modal', () => {
+            location = "./index.html";
+        });
+        var modal = new bootstrap.Modal(modalElement);
         modal.show();
     </script>
 </body>
