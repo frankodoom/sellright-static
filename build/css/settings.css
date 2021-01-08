@@ -1,0 +1,165 @@
+.right_col * {
+    font-size: medium;
+}
+
+.btn-edit {
+    color: #007BFF;
+    text-decoration: underline;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.btn-edit:active, .btn-edit:hover {
+    box-shadow: none;
+}
+
+.btn-save {
+    background-color: #007BFF;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 10px 25px;
+}
+
+.tab-bar {
+    background-color: white;
+    padding: 0 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.tab {
+    color: #A4A4A4;
+    padding: 10px 2px;
+}
+
+.tab.active {
+    color: #2A3F54;
+    border-bottom: 2px solid #2A3F54;
+}
+
+.content-root {
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 140px);
+}
+
+.tab-content {
+    flex: 1;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    gap: 1px;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    padding: 20px 30px;
+    gap: 20px;
+    align-items: center;
+}
+
+.content-header .title {
+    font-size: x-large;
+    margin-right: auto;
+}
+
+.content {
+    background-color: white;
+    flex: 1;
+}
+
+.profile-pic {
+    margin-bottom: 40px;
+}
+
+.profile-pic>img {
+    background-color: #C4C4C4;
+    width: 122px;
+    height: 122px;
+    border-radius: 70px;
+}
+
+.profile-pic button {
+    background-color: white;
+    border-radius: 40px;
+    width: 34px;
+    height: 34px;
+    padding: 0 0 4px 3px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.fields {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: small;
+    margin-bottom: 10px;
+}
+
+input, textarea, select {
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0 20px;
+    border-radius: 3px;
+    height: 55px;
+}
+
+textarea {
+    height: unset;
+    padding: 15px 20px;
+}
+
+.fields.first {
+    padding: 0 20px 20px 25px;
+}
+
+.fields.second {
+    padding: 0 20px 20px 20px;
+}
+
+@media (min-width:992px) {
+    .fields.first {
+        padding-bottom: 50px;
+    }
+    .fields.second {
+        padding-top: 212px;
+    }
+}
+
+@media (min-width:1500px) {
+    .fields.first, .fields.second {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+}
+
+.input-row {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.input-row>div {
+    flex: 1;
+}
+
+@media (min-width:576px) {
+    .input-row {
+        flex-direction: row;
+    }
+}

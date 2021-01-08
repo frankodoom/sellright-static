@@ -1,0 +1,323 @@
+.search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 30px;
+    margin-bottom: 2px;
+    height: 70px;
+    background-color: white;
+}
+
+.search-bar input.search {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: large;
+    margin-left: 20px;
+}
+
+.search-bar a {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.search-bar a.active {
+    background-color: #E6E6E6;
+}
+
+.products {
+    overflow-y: auto;
+    background-color: white;
+}
+
+.products>div {
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+}
+
+@media (min-width: 576px) {
+    .products>div {
+        justify-content: unset;
+    }
+}
+
+@media (min-width: 768px) {
+    .products {
+        height: calc(100vh - 175px);
+    }
+    .products>div {
+        gap: 15px;
+    }
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 1px solid #E5E5E5;
+    width: 167px;
+}
+
+.product img {
+    background-color: #F6F6F6;
+    height: 130px;
+    border-radius: 4px;
+    border: none;
+}
+
+.product .details {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    align-items: center;
+}
+
+.product .name {
+    font-weight: bold;
+    font-size: medium;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.product .price {
+    font-size: small;
+}
+
+.review {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+@media (min-width: 768px) {
+    .review {
+        margin-top: 0;
+        height: calc(100vh - 103px);
+    }
+}
+
+.review>div {
+    background-color: white;
+}
+
+.review .header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 20px;
+    margin-bottom: 2px;
+}
+
+.review .header>.title {
+    font-size: large;
+}
+
+.review .header>.order {
+    font-size: medium;
+    color: #A4A4A4;
+    text-align: right;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    margin-bottom: 2px;
+    flex: 1;
+}
+
+.cart>.item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cart>.item .name {
+    font-weight: bold;
+    font-size: medium;
+}
+
+.cart>.item .price {
+    color: #616161;
+}
+
+.cart>.item button {
+    width: 23px;
+    height: 23px;
+    padding: 0;
+    margin: 0;
+}
+
+.cart>.item .quantity {
+    font-weight: bold;
+    font-size: medium;
+    margin: 0 10px;
+}
+
+.costs {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+}
+
+.costs>div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.costs>div>span {
+    color: #616161;
+    font-size: medium;
+}
+
+.costs .total {
+    font-size: large;
+    font-weight: bold;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px 30px 20px;
+}
+
+.checkout>.btn {
+    background-color: #575757;
+    border-radius: 4px;
+    color: white;
+    font-size: large;
+    font-weight: normal;
+    padding: 15px;
+    margin: 0;
+    width: 100%;
+}
+
+.modal-header {
+    padding: 20px 2rem;
+}
+
+.modal-title {
+    font-weight: bold;
+    font-size: large;
+}
+
+.modal-footer {
+    justify-content: stretch;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: medium;
+}
+
+#checkout-modal .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: large;
+}
+
+#checkout-modal .total .value {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+#checkout-modal input.amount {
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 15px 20px;
+}
+
+#checkout-modal input.balance {
+    background: rgba(125, 125, 125, 0.1);
+    border: none;
+    border-radius: 3px;
+    padding: 15px 20px;
+    outline: none;
+}
+
+#checkout-modal .btn.done {
+    background-color: #007BFF;
+    padding: 15px 40px;
+    color: white;
+    align-self: center;
+    margin-top: 15px;
+    border: none;
+}
+
+@media (min-width: 768px) {
+    #checkout-modal .modal-dialog {
+        width: 440px;
+    }
+    #receipt-modal .modal-dialog {
+        width: 440px;
+    }
+}
+
+#receipt-modal {
+    font-size: medium;
+}
+
+#receipt-modal table {
+    margin: 0 2rem;
+}
+
+#receipt-modal table tr td:last-of-type {
+    text-align: right;
+}
+
+.receipt-cart .item {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.receipt-cart .item>.name {
+    font-weight: bold;
+}
+
+.receipt-cart .item>.price {
+    font-size: small;
+    color: #616161;
+}
+
+#receipt-modal .quantity, #receipt-modal .cart .total {
+    color: #616161;
+}
+
+#receipt-modal .total-price {
+    margin-left: auto;
+    font-weight: bold;
+}
+
+#receipt-modal .subtotals {
+    margin: 0 1.5rem;
+    border-top: 2px solid #F3F3F3;
+}
+
+#receipt-modal .subtotals td {
+    padding: 5px 0.5rem;
+}
+
+#receipt-modal .subtotals tfoot {
+    border-top: 2px solid #F3F3F3;
+    border-bottom: 2px solid #F3F3F3;
+    font-size: large;
+}
+
+#receipt-modal .subtotals tfoot td {
+    padding: 20px 0.5rem;
+}

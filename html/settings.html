@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SellRight</title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+  <!-- iCheck -->
+  <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+
+  <!-- bootstrap-progressbar -->
+  <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+  <!-- JQVMap -->
+  <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet" />
+  <!-- bootstrap-daterangepicker -->
+  <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.css" rel="stylesheet">
+  <link href="../build/css/settings.css" rel="stylesheet">
+</head>
+
+<body class="nav-md" style="overflow-x: hidden;">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0; margin-bottom: 3rem;">
+          </div>
+
+          <div class="clearfix"></div>
+          <br />
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <ul class="nav side-menu">
+              <li>
+                <a href="./index.html">
+                  <img src="images/cart.svg" />
+                  <span>POS</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src="images/gift.svg" />
+                  <span>Product</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src="images/bar_graph.svg" />
+                  <span>Sales</span>
+                </a>
+              </li>
+              <li>
+                <a>
+                  <img src="images/receipt.svg" />
+                  <span>Receipt</span>
+                </a>
+              </li>
+              <li class="active">
+                <a>
+                  <img src="images/settings.svg" />
+                  <span>Settings</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- /sidebar menu -->
+
+        </div>
+      </div>
+
+      <!-- top navigation -->
+      <div class="top_nav">
+        <div class="nav_menu" style="margin-bottom: 0;">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+
+            <ul class="nav navbar-nav navbar-right">
+              <li class="">
+                <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="images/img.jpg" alt="">John Doe
+                  <span class=" fa fa-angle-down"></span>
+                </a>
+                <ul class="dropdown-menu dropdown-usermenu pull-right">
+                  <li><a href="javascript:;"> Profile</a></li>
+                  <li>
+                    <a href="javascript:;">
+                      <span class="badge bg-red pull-right">50%</span>
+                      <span>Settings</span>
+                    </a>
+                  </li>
+                  <li><a href="javascript:;">Help</a></li>
+                  <li><a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                </ul>
+              </li>
+
+              <li role="presentation" class="dropdown">
+                <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-envelope-o"></i>
+                  <span class="badge bg-green">6</span>
+                </a>
+                <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <a>
+                      <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                      <span>
+                        <span>John Smith</span>
+                        <span class="time">3 mins ago</span>
+                      </span>
+                      <span class="message">
+                        Film festivals used to be do-or-die moments for movie makers. They were where...
+                      </span>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="text-center">
+                      <a>
+                        <strong>See All Alerts</strong>
+                        <i class="fa fa-angle-right"></i>
+                      </a>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main" style="padding: 0;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12" style="padding: 0;">
+              <div class="content-root">
+                <div class="tab-bar" class="row">
+                  <a class="tab active">Profile</a>
+                  <a class="tab">Users</a>
+                  <a class="tab">Security</a>
+                </div>
+                <div class="tab-content">
+                  <div class="content-header">
+                    <span class="title">Business Profile</span>
+                    <button class="btn-edit">Edit</button>
+                    <button class="btn btn-save">Save</button>
+                  </div>
+                  <div class="content">
+                    <form class="container">
+                      <div class="col-xs-12 col-md-6" style="padding: 50px 0 0 0;">
+                        <div style="display: flex; justify-content: center;">
+                          <div class="profile-pic" style="position: relative">
+                            <input id="profilePicInput" name="profilePicInput" type="file" style="display: none;" />
+                            <img id="profilePic">
+                            <button type="button" class="btn" onclick="$('#profilePicInput').click()">
+                              <img src="images/edit.svg" />
+                            </button>
+                          </div>
+                        </div>
+                        <div class="fields first">
+                          <div class="input-group">
+                            <label for="businessName">Business Name</label>
+                            <input name="businessName" type="text" placeholder="Accede Ghana" />
+                          </div>
+                          <div class="input-group">
+                            <label for="businessDescription">Business Description</label>
+                            <textarea name="businessDescription" type="text" placeholder="Accede Ghana"
+                              style="width: 100%; resize: vertical;"></textarea>
+                          </div>
+                          <div class="input-row">
+                            <div class="input-group">
+                              <label for="phoneNumber">Phone Number</label>
+                              <input name="phoneNumber" type="tel" />
+                            </div>
+                            <div class="input-group">
+                              <label for="businessType">Business Type</label>
+                              <select name="businessType">
+                                <option selected>Retail</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xs-12 col-md-6" style="padding: 0;">
+                        <div class="fields second">
+                          <div class="input-row">
+                            <div class="input-group">
+                              <label for="country">Country</label>
+                              <input name="country" />
+                            </div>
+                            <div class="input-group">
+                              <label for="region">Region</label>
+                              <select name="region">
+                                <option>Option 1</option>
+                                <option>Option 2</option>
+                                <option>Option 3</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+    </div>
+  </div>
+
+  <div id="checkout-modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content" style="border-radius: 0; border: none;">
+        <div class="modal-header">
+          <h5 class="modal-title">Checkout</h5>
+        </div>
+        <div class="cart">
+          <div class="item">
+            <div>
+              <span class="name">Premium Salad</span><br />
+              <span class="price">Ghc 200.00</span>
+            </div>
+            <span class="quantity">5</span>
+          </div>
+          <div class="item">
+            <div>
+              <span class="name">Premium Salad</span><br />
+              <span class="price">Ghc 200.00</span>
+            </div>
+            <span class="quantity">5</span>
+          </div>
+          <div class="item">
+            <div>
+              <span class="name">Premium Salad</span><br />
+              <span class="price">Ghc 200.00</span>
+            </div>
+            <span class="quantity">5</span>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="total">
+            <span>Total Price</span>
+            <span class="value">3500.00</span>
+          </div>
+          <input name="amount" class="amount" type="number" placeholder="Amount Rendered" />
+          <input class="balance" placeholder="Balance" readonly />
+
+          <button class="btn btn-dark done" onclick="showReceipt()">Done</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="receipt-modal" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content" style="border-radius: 0; border: none; display: flex; flex-direction: column;">
+        <div class="modal-header">
+          <div style="display: flex; flex-direction: row; justify-content: space-between;align-items: baseline;">
+            <span class="modal-title">SOY PORKBOX</span>
+            <span style="color: #454545b3;">#45567</span></div>
+        </div>
+        <table class="receipt-cart">
+          <tr>
+            <td>
+              <div class="item">
+                <span class="name">Premium Salad</span>
+                <span class="price">Ghc 200.00</span>
+              </div>
+            </td>
+            <td>
+              <span class="quantity">5</span>
+            </td>
+            <td>
+              <div class="total">GHc 1,000.00</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item">
+                <span class="name">Tomato Paste</span>
+                <span class="price">Ghc 10.50</span>
+              </div>
+            </td>
+            <td>
+              <span class="quantity">4</span>
+            </td>
+            <td>
+              <div class="total">GHc 42.00</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item">
+                <span class="name">Acai Bowl - Let That Mango </span>
+                <span class="price">Ghc 7.85</span>
+              </div>
+            </td>
+            <td>
+              <span class="quantity">3</span>
+            </td>
+            <td>
+              <div class="total">GHc 23.55</div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item">
+                <span class="name">Acai Bowl - Let That Mango </span>
+                <span class="price">Ghc 7.85</span>
+              </div>
+            </td>
+            <td>
+              <span class="quantity">3</span>
+            </td>
+            <td>
+              <div class="total">GHc 23.55</div>
+            </td>
+          </tr>
+        </table>
+        <table class="subtotals">
+          <tbody>
+            <tr>
+              <td>
+                <b>Subtotal</b>
+              </td>
+              <td>
+                <b>GHc 1,065.55</b>
+              </td>
+            </tr>
+            <tr class="text-secondary">
+              <td>Tax</td>
+              <td>GHc 13.00</td>
+            </tr>
+            <tr class="text-secondary">
+              <td>VAT</td>
+              <td>GHc 13.00</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <td><b>Total Price</b></td>
+            <td class="ml-auto"><b>GHc 1,065.55</b></td>
+          </tfoot>
+        </table>
+        <div style="display: flex; flex-direction: column; align-items: center;padding: 20px 0;">
+          <span class="text-secondary">January 04, 2021 - 11:00am</span>
+          <span style="color: #3871A5;">Have a great day!</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- Chart.js -->
+  <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+  <!-- gauge.js -->
+  <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+  <!-- bootstrap-progressbar -->
+  <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+  <!-- iCheck -->
+  <script src="../vendors/iCheck/icheck.min.js"></script>
+  <!-- Skycons -->
+  <script src="../vendors/skycons/skycons.js"></script>
+  <!-- Flot -->
+  <script src="../vendors/Flot/jquery.flot.js"></script>
+  <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+  <script src="../vendors/Flot/jquery.flot.time.js"></script>
+  <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+  <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+  <!-- Flot plugins -->
+  <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+  <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+  <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+  <!-- DateJS -->
+  <script src="../vendors/DateJS/build/date.js"></script>
+  <!-- JQVMap -->
+  <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+  <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+  <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+  <!-- bootstrap-daterangepicker -->
+  <script src="../vendors/moment/min/moment.min.js"></script>
+  <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.min.js"></script>
+  <script>
+    function checkout() {
+      $('#checkout-modal').modal();
+    }
+    function showReceipt() {
+      $('#checkout-modal').modal('hide');
+      $('#receipt-modal').modal('show');
+    }
+  </script>
+</body>
+
+</html>

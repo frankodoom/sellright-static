@@ -1,0 +1,22 @@
+ .cart {
+     background-color: white;
+ }
+
+ @media (min-width: 768px) {
+     .right_col .cart {
+         height: calc(100vh - 175px);
+     }
+ }
+
+ .cart .item {
+     padding: 20px 30px;
+     background-color: white;
+ }
+
+ .cart .item.highlight {
+     background-color: #F8FBFE;
+ }
+
+ .cart .item .btn {
+     background-color: white;
+ }
